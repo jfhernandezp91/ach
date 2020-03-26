@@ -1405,6 +1405,14 @@
                               class="form-control"
                             />
                           </div>
+                          <div class="col-md-3">
+                            <label>Teléfono:</label>
+                            <input
+                              v-model="telefonoAdmonUsuarios"
+                              type="text"
+                              class="form-control"
+                            />
+                          </div>
                         </div>
                       </form>
                       <br />
@@ -1440,6 +1448,14 @@
                               class="form-control"
                             />
                           </div>
+                          <div class="col-md-3">
+                            <label>Teléfono:</label>
+                            <input
+                              v-model="telefonoAdmonCuentas"
+                              type="text"
+                              class="form-control"
+                            />
+                          </div>
                         </div>
                       </form>
 
@@ -1472,6 +1488,14 @@
                             <input
                               v-model="emailAdmonUsuarioyCuenta"
                               type="email"
+                              class="form-control"
+                            />
+                          </div>
+                          <div class="col-md-3">
+                            <label>Teléfono:</label>
+                            <input
+                              v-model="telefonoAdmonUsuarioyCuenta"
+                              type="text"
                               class="form-control"
                             />
                           </div>
@@ -1838,6 +1862,10 @@
                       <td>Correo:</td>
                       <td>{{ emailAdmonUsuarios }}</td>
                     </tr>
+                    <tr>
+                      <td>Teléfono:</td>
+                      <td>{{ telefonoAdmonUsuarios }}</td>
+                    </tr>
                   </tbody>
 
                   <!-- Seccion Administrador de cuentas-->
@@ -1859,6 +1887,10 @@
                     <tr>
                       <td>Correo:</td>
                       <td>{{ emailAdmonCuentas }}</td>
+                    </tr>
+                    <tr>
+                      <td>Teléfono:</td>
+                      <td>{{ telefonoAdmonCuentas }}</td>
                     </tr>
                   </tbody>
 
@@ -1883,6 +1915,10 @@
                     <tr>
                       <td>Correo:</td>
                       <td>{{ emailAdmonUsuarioyCuenta }}</td>
+                    </tr>
+                    <tr>
+                      <td>Teléfono:</td>
+                      <td>{{ telefonoAdmonUsuarioyCuenta }}</td>
                     </tr>
                   </tbody>
                 </table>
@@ -1955,6 +1991,9 @@
           nombreAdmonUsuarioyCuenta: "",
           cedulaAdmonUsuarioyCuenta: "",
           emailAdmonUsuarioyCuenta: "",
+          telefonoAdmonUsuarios: "",
+          telefonoAdmonCuentas: "",
+          telefonoAdmonUsuarioyCuenta: "",
 
           banco: {
             1: {
