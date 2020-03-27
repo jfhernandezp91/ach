@@ -45,7 +45,7 @@
           data-toggle="modal"
           data-target=".MODAL_SERVICIO"
         >
-          Abrir Formulario de Servicio
+          Abrir Formulario --- <b>SERVICIO</b>
         </button>
         <br />
 
@@ -119,6 +119,7 @@
                               <option value="PSE Pagos Portales"
                                 >PSE Pagos Portales</option
                               >
+                              <option value="No Aplica">No Aplica</option>
                             </select>
                           </div>
 
@@ -135,10 +136,13 @@
                               <option value="Conexión en Línea - CEL"
                                 >Conexión en Línea - CEL
                               </option>
+                              <option
+                                value="Conexión Integrada de Factura - CIF"
+                                >Conexión Integrada de Factura - CIF</option
+                              >
                               <option value="Formulario de Pago - FP"
                                 >Formulario de Pago - FP</option
                               >
-                              <option value="Pasarela">Pasarela</option>
                               <option value="No aplica">No aplica</option>
                             </select>
                           </div>
@@ -312,7 +316,7 @@
           data-toggle="modal"
           data-target=".MODAL_CODIGO_SERVICIO"
         >
-          Abrir Formulario Códigos de Servicio
+          Abrir Formulario --- <b>CÓDIGOS DE SERVICIO</b>
         </button>
         <br /><br />
 
@@ -400,18 +404,18 @@
                           </div>
 
                           <div class="col-md-1">
-                            <label>Jurídica:</label>
+                            <label>Natural:</label>
                             <input
-                              v-model="limiteJuridica1"
+                              v-model="limiteNatural1"
                               type="number"
                               class="form-control"
                             />
                           </div>
 
                           <div class="col-md-1">
-                            <label>Natural:</label>
+                            <label>Jurídica:</label>
                             <input
-                              v-model="limiteNatural1"
+                              v-model="limiteJuridica1"
                               type="number"
                               class="form-control"
                             />
@@ -469,18 +473,18 @@
                           </div>
 
                           <div class="col-md-1">
-                            <label>Jurídica:</label>
+                            <label>Natural:</label>
                             <input
-                              v-model="limiteJuridica2"
+                              v-model="limiteNatural2"
                               type="number"
                               class="form-control"
                             />
                           </div>
 
                           <div class="col-md-1">
-                            <label>Natural:</label>
+                            <label>Jurídica:</label>
                             <input
-                              v-model="limiteNatural2"
+                              v-model="limiteJuridica2"
                               type="number"
                               class="form-control"
                             />
@@ -538,18 +542,18 @@
                           </div>
 
                           <div class="col-md-1">
-                            <label>Jurídica:</label>
+                            <label>Natural:</label>
                             <input
-                              v-model="limiteJuridica3"
+                              v-model="limiteNatural3"
                               type="number"
                               class="form-control"
                             />
                           </div>
 
                           <div class="col-md-1">
-                            <label>Natural:</label>
+                            <label>Jurídica:</label>
                             <input
-                              v-model="limiteNatural3"
+                              v-model="limiteJuridica3"
                               type="number"
                               class="form-control"
                             />
@@ -607,18 +611,18 @@
                           </div>
 
                           <div class="col-md-1">
-                            <label>Jurídica:</label>
+                            <label>Natural:</label>
                             <input
-                              v-model="limiteJuridica4"
+                              v-model="limiteNatural4"
                               type="number"
                               class="form-control"
                             />
                           </div>
 
                           <div class="col-md-1">
-                            <label>Natural:</label>
+                            <label>Jurídica:</label>
                             <input
-                              v-model="limiteNatural4"
+                              v-model="limiteJuridica4"
                               type="number"
                               class="form-control"
                             />
@@ -950,7 +954,7 @@
           data-toggle="modal"
           data-target=".MODAL_INFO_EMPRESA"
         >
-          Abrir Formulario de Información de Empresa
+          Abrir Formulario --- <b> INFORMACIÓN EMPRESA </b>
         </button>
         <br /><br />
 
@@ -1161,7 +1165,7 @@
           data-toggle="modal"
           data-target=".MODAL_EJECUTIVO_CUENTA_CONSULTOR_ASIGNADO"
         >
-          Abrir Formulario Ejecutivo de Cuenta / Consultor Asignado
+          Abrir Formulario --- <b>EJECUTIVO DE CUENTA / CONSULTOR ASIGNADO</b>
         </button>
         <br />
         <br />
@@ -1336,7 +1340,8 @@
           data-toggle="modal"
           data-target=".MODAL_ADMINISTRADOR_USUARIO_CUENTA"
         >
-          Abrir Formulario Usuario Administrador / Administrador Cuentas
+          Abrir Formulario ---
+          <b>USUARIO ADMINISTRADOR / ADMINISTRADOR DE CUENTAS</b>
         </button>
         <br /><br />
 
@@ -2061,10 +2066,13 @@
 
           servicio: {
             1: {
-              nombre: "A través de PASARELA"
+              nombre: "PSE"
             },
             2: {
-              nombre: "A través de portal PSE"
+              nombre: "PSE Pagos"
+            },
+            3: {
+              nombre: "PSE Pagos Portales"
             }
           },
           tipoServicio: null
