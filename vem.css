@@ -35,19 +35,25 @@ p {
   padding: 15px;
 }
 
+table {
+  width: auto;
+  border: 5px crimson;
+}
+
 .resultado {
-  font-size: 13px;
+  font-size: 14px;
   width: auto;
 }
 
 th {
   text-align: center;
+  font-size: 19px;
+}
+
+td {
+  font-size: 14.5px;
 }
 
 .muestra__servicios {
   text-align: center;
-}
-
-input:focus {
-  background-color: yellow;
 }
