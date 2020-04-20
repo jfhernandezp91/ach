@@ -1,3 +1,4 @@
+/* contenido de la web */
 .container-fluid {
   background-color: rgba(5, 5, 114, 0.856);
 }
@@ -35,19 +36,24 @@ p {
   padding: 15px;
 }
 
+/* aplica para todas las tablas */
 .resultado {
-  font-size: 13px;
+  font-size: 14px;
   width: auto;
 }
 
+/* encabezados de las tablas */
 th {
   text-align: center;
+  font-size: 17px;
 }
 
+/* contenido de las tablas "las filas" */
+td {
+  font-size: 14px;
+}
+
+/* aplica para la clase a la tabla donde se muestran los códigos de servicio */
 .muestra__servicios {
   text-align: center;
-}
-
-input:focus {
-  background-color: yellow;
 }
